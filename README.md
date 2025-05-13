@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🧠 AI Chatbot Project - Steps 1 to 5 Explained
 
 This document provides a full explanation of what has been done so far in your project — including what was built, why each part exists, what files were created, and how each component is connected.
@@ -137,3 +138,6 @@ This document provides a full explanation of what has been done so far in your p
 Next step? Stripe payment integration 💳 (Step 6)
 
 Let me know if you want this as a PDF or copied into your README!
+=======
+# Intellichat
+>>>>>>> 4b31805805ecf1bf001b77da38359b15402e369b
