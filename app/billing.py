@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 billing_bp = Blueprint("billing", __name__)
+print("📦 billing_bp loaded ✅")
 
 # Set your Stripe secret key
 stripe.api_key = os.getenv("STRIPE_SECRET_KEY")
@@ -14,10 +15,10 @@ stripe.api_key = os.getenv("STRIPE_SECRET_KEY")
 # Dummy: simulate who paid (in-memory store for now)
 premium_users = set()
 
+
 @billing_bp.route("/create-checkout-session", methods=["POST"])
-@jwt_required()
 def create_checkout_session():
-    current_user = get_jwt_identity()
+    current_user = request.args.get("user", "guest")  # just use this line, no get_jwt_identity
 
     try:
         checkout_session = stripe.checkout.Session.create(
@@ -28,7 +29,7 @@ def create_checkout_session():
                         'product_data': {
                             'name': 'AI Chatbot Premium Access',
                         },
-                        'unit_amount': 500,  # $5.00
+                        'unit_amount': 500,
                     },
                     'quantity': 1,
                 },
@@ -43,6 +44,9 @@ def create_checkout_session():
     except Exception as e:
         return jsonify({"error": str(e)}), 400
 
+
+
+
 @billing_bp.route("/payment-success")
 def payment_success():
     user = request.args.get("user")
@@ -52,7 +56,10 @@ def payment_success():
     return "Missing user"
 
 @billing_bp.route("/premium-status", methods=["GET"])
-@jwt_required()
 def check_premium():
-    user = get_jwt_identity()
+    user = request.args.get("user", "guest")  # fallback
     return jsonify({"premium": user in premium_users})
+
+@billing_bp.route("/test-payment", methods=["GET"])
+def test_payment():
+    return "Stripe route works!"

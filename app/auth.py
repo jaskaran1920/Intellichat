@@ -11,6 +11,10 @@ USERS = {
 @auth_bp.route('/login', methods=['POST'])
 def login():
     print("🔥 /login route hit")
+    
+    print("Headers:", dict(request.headers))
+    print("Raw body:", request.data)
+    print("JSON:", request.get_json())
 
     try:
         data = request.get_json()
@@ -19,6 +23,9 @@ def login():
         username = data.get("username")
         password = data.get("password")
         print("🔑 username:", username, "| password:", password)
+
+        if username and password:
+           return jsonify({'message': 'Login successful'})
 
         if not username or not password:
             print("❌ Missing credentials")

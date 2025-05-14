@@ -26,6 +26,8 @@ def load_and_index_documents(pdf_path: str):
     chunks = splitter.split_documents(documents)
 
     # Create embeddings
+    print("API Key:", os.getenv("OPENAI_API_KEY"))
+
     embeddings = OpenAIEmbeddings(openai_api_key=os.getenv("OPENAI_API_KEY"))
     vectorstore = FAISS.from_documents(chunks, embeddings)
 

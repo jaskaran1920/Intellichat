@@ -1,15 +1,21 @@
-<<div class="chat-container">
-    <h2>Ask your document</h2>
-    <form (ngSubmit)="sendMessage()">
-      <input type="text" [(ngModel)]="question" name="question" placeholder="Type your question..." required />
-      <button type="submit">Send</button>
-    </form>
-  
-    <div class="response" *ngIf="answer">
-      <strong>Response:</strong>
-      <p>{{ answer }}</p>
+<div class="chat-widget">
+  <div class="chat-header">Intellichat 🧠</div>
+
+  <div class="chat-body">
+    <div *ngFor="let msg of messages" class="message-row" [ngClass]="msg.sender">
+      <div class="message-bubble">
+        <p>{{ msg.text }}</p>
+      </div>
     </div>
-  
+
     <p *ngIf="error" class="error">{{ error }}</p>
   </div>
+  <div class="upgrade-box">
+    <button (click)="upgradeToPremium()">🔓 Unlock Premium</button>
+  </div>
   
+  <form class="chat-form" (ngSubmit)="sendMessage()">
+    <input [(ngModel)]="question" name="question" placeholder="Type your question..." required />
+    <button type="submit">Send</button>
+  </form>
+</div>
