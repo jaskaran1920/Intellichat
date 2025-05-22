@@ -1,19 +1,37 @@
 <div class="chat-widget">
-  <div class="chat-header">Intellichat 🧠</div>
+  <div class="chat-header">PaySense 💸</div>
 
+
+  <!-- 📤 CSV Upload section -->
+  <div class="csv-upload">
+    <input type="file" (change)="onFileSelected($event)" accept=".csv" />
+    <button (click)="uploadCSV()" [disabled]="!selectedFile">Upload CSV</button>
+    <p *ngIf="uploadMessage">{{ uploadMessage }}</p>
+  </div>
+
+  <!-- 💬 Chat messages -->
   <div class="chat-body">
     <div *ngFor="let msg of messages" class="message-row" [ngClass]="msg.sender">
       <div class="message-bubble">
         <p>{{ msg.text }}</p>
       </div>
     </div>
+  </div>
 
-    <p *ngIf="error" class="error">{{ error }}</p>
-  </div>
-  <div class="upgrade-box">
-    <button (click)="upgradeToPremium()">🔓 Unlock Premium</button>
-  </div>
-  
+  <!-- 🔴 Error -->
+  <p *ngIf="error" class="error">{{ error }}</p>
+
+  <!-- 🔐 Upgrade -->
+  <!-- 🔓 Unlock Premium -->
+<div class="upgrade-box" *ngIf="!isPremium && messageCount >= maxFreeMessages">
+  <button (click)="upgradeToPremium()">🔓 Unlock Premium</button>
+</div>
+
+<div *ngIf="isPremium" class="premium-banner">
+  🎉 You are now a Premium user!
+</div>
+
+  <!-- 📝 Chat input form -->
   <form class="chat-form" (ngSubmit)="sendMessage()">
     <input [(ngModel)]="question" name="question" placeholder="Type your question..." required />
     <button type="submit">Send</button>

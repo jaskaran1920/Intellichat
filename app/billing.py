@@ -1,7 +1,6 @@
 import os
 import stripe
-from flask import Blueprint, request, jsonify
-from flask_jwt_extended import jwt_required, get_jwt_identity
+from flask import Blueprint, request, jsonify, redirect
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -12,13 +11,13 @@ print("📦 billing_bp loaded ✅")
 # Set your Stripe secret key
 stripe.api_key = os.getenv("STRIPE_SECRET_KEY")
 
-# Dummy: simulate who paid (in-memory store for now)
+# In-memory store to simulate premium users
 premium_users = set()
 
 
 @billing_bp.route("/create-checkout-session", methods=["POST"])
 def create_checkout_session():
-    current_user = request.args.get("user", "guest")  # just use this line, no get_jwt_identity
+    current_user = request.args.get("user", "guest")  # hardcoded for now
 
     try:
         checkout_session = stripe.checkout.Session.create(
@@ -35,30 +34,33 @@ def create_checkout_session():
                 },
             ],
             mode='payment',
-            success_url='http://localhost:5000/payment-success?user=' + current_user,
-            cancel_url='http://localhost:5000/payment-cancel',
+            # ✅ Redirect to backend first, then redirect to Angular
+            success_url='http://127.0.0.1:5000/payment-success?user=' + current_user,
+            cancel_url='http://127.0.0.1:4200/chat?premium=cancel',
         )
 
         return jsonify({"checkout_url": checkout_session.url})
-    
+
     except Exception as e:
         return jsonify({"error": str(e)}), 400
 
 
-
-
 @billing_bp.route("/payment-success")
 def payment_success():
-    user = request.args.get("user")
+    user = request.args.get("user", "guest")
     if user:
         premium_users.add(user)
-        return f"Payment successful! {user} is now a premium user. You may close this tab."
-    return "Missing user"
+        print(f"✅ {user} added to premium_users:", premium_users)
+        # ✅ Redirect back to Angular with success flag
+        return redirect(f"http://localhost:4200/chat?premium=success&user={user}")
+    return "❌ Missing user"
+
 
 @billing_bp.route("/premium-status", methods=["GET"])
 def check_premium():
-    user = request.args.get("user", "guest")  # fallback
+    user = request.args.get("user", "guest")
     return jsonify({"premium": user in premium_users})
+
 
 @billing_bp.route("/test-payment", methods=["GET"])
 def test_payment():

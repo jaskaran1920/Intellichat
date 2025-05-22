@@ -1,0 +1,201 @@
+Date,Description,Category,Amount
+2025-04-14,eBay,Shopping,209.59
+2025-03-08,Pharmacy,Healthcare,177.3
+2025-01-08,Cinema,Entertainment,235.28
+2025-02-08,Zoom,Subscription,24.8
+2025-02-03,Amazon,Shopping,226.67
+2025-02-12,Starbucks,F&B,159.95
+2025-03-20,Netflix,Entertainment,105.03
+2025-02-01,Dropbox,Subscription,52.78
+2025-02-22,Gas Bill,Utilities,69.05
+2025-02-08,Amazon,Shopping,84.28
+2025-04-05,Health Insurance,Healthcare,168.1
+2025-04-14,Starbucks,F&B,244.86
+2025-01-10,Canva,Subscription,212.13
+2025-02-02,Internet,Utilities,203.56
+2025-03-08,Gas Bill,Utilities,56.05
+2025-01-31,Electricity Bill,Utilities,182.39
+2025-03-23,Netflix,Entertainment,261.3
+2025-04-19,McDonald's,F&B,41.0
+2025-01-18,eBay,Shopping,85.32
+2025-02-20,Shell Gas,Transport,96.78
+2025-03-27,Walmart,Grocery,144.13
+2025-03-23,Health Insurance,Healthcare,279.05
+2025-01-08,Electricity Bill,Utilities,285.06
+2025-01-14,McDonald's,F&B,40.52
+2025-04-26,Safeway,Grocery,288.97
+2025-03-08,eBay,Shopping,243.3
+2025-03-29,Internet,Utilities,296.35
+2025-03-22,Chipotle,F&B,217.3
+2025-03-26,Cinema,Entertainment,13.3
+2025-03-18,BestBuy,Shopping,195.48
+2025-01-01,Water Bill,Utilities,155.29
+2025-03-11,Cinema,Entertainment,255.9
+2025-02-13,Internet,Utilities,82.33
+2025-04-01,Subway,F&B,100.25
+2025-01-11,Starbucks,F&B,276.35
+2025-04-19,BestBuy,Shopping,275.88
+2025-02-03,Amazon,Shopping,8.81
+2025-04-06,McDonald's,F&B,59.45
+2025-03-18,Subway,F&B,210.55
+2025-04-05,BP Petrol,Transport,96.09
+2025-03-28,Target,Shopping,244.63
+2025-02-18,Pharmacy,Healthcare,203.25
+2025-02-04,Doctor Visit,Healthcare,203.85
+2025-01-05,Health Insurance,Healthcare,87.88
+2025-01-08,Shell Gas,Transport,119.3
+2025-01-21,Safeway,Grocery,74.68
+2025-02-24,Water Bill,Utilities,145.49
+2025-02-19,Safeway,Grocery,166.13
+2025-02-02,Notion,Subscription,242.07
+2025-04-04,Notion,Subscription,284.67
+2025-01-13,Zoom,Subscription,180.62
+2025-03-27,Pharmacy,Healthcare,105.48
+2025-04-06,Electricity Bill,Utilities,108.21
+2025-03-06,Electricity Bill,Utilities,129.6
+2025-01-31,Notion,Subscription,107.99
+2025-03-26,Notion,Subscription,128.88
+2025-03-02,Zoom,Subscription,112.18
+2025-01-16,Doctor Visit,Healthcare,56.58
+2025-01-28,BestBuy,Shopping,154.65
+2025-02-22,Zoom,Subscription,278.96
+2025-03-15,Zoom,Subscription,61.21
+2025-03-26,Spotify,Entertainment,80.59
+2025-02-14,Electricity Bill,Utilities,222.32
+2025-03-07,Spotify,Entertainment,59.21
+2025-03-15,BestBuy,Shopping,26.92
+2025-02-14,eBay,Shopping,160.51
+2025-04-18,Shell Gas,Transport,73.44
+2025-04-09,Internet,Utilities,231.04
+2025-02-01,Cinema,Entertainment,219.93
+2025-01-03,BestBuy,Shopping,150.48
+2025-03-28,Target,Shopping,292.33
+2025-04-19,Amazon,Shopping,170.28
+2025-02-18,Starbucks,F&B,217.74
+2025-04-03,McDonald's,F&B,175.35
+2025-02-10,Pharmacy,Healthcare,199.85
+2025-04-21,Internet,Utilities,266.29
+2025-03-13,BP Petrol,Transport,252.85
+2025-04-09,Canva,Subscription,244.6
+2025-02-27,Spotify,Entertainment,298.59
+2025-01-23,Gas Bill,Utilities,213.25
+2025-04-15,Shell Gas,Transport,215.95
+2025-01-26,Internet,Utilities,253.71
+2025-04-06,Walmart,Grocery,40.32
+2025-02-04,Internet,Utilities,206.22
+2025-03-03,Netflix,Entertainment,67.39
+2025-03-20,Cinema,Entertainment,233.06
+2025-01-10,Chipotle,F&B,59.94
+2025-03-10,Pharmacy,Healthcare,44.37
+2025-02-21,Walmart,Grocery,60.96
+2025-04-19,Spotify,Entertainment,152.47
+2025-04-01,Uber,Transport,105.1
+2025-04-09,Doctor Visit,Healthcare,282.34
+2025-04-17,Pharmacy,Healthcare,225.33
+2025-01-13,Trader Joe's,Grocery,160.93
+2025-01-17,Zoom,Subscription,82.94
+2025-04-13,Trader Joe's,Grocery,30.96
+2025-02-17,Amazon,Shopping,150.34
+2025-01-08,Whole Foods,Grocery,269.83
+2025-04-08,Health Insurance,Healthcare,115.07
+2025-03-14,Amazon,Shopping,229.36
+2025-03-29,Starbucks,F&B,121.99
+2025-04-16,Trader Joe's,Grocery,173.22
+2025-04-09,Target,Shopping,23.45
+2025-04-15,Notion,Subscription,231.87
+2025-01-15,Cinema,Entertainment,127.65
+2025-01-25,Chipotle,F&B,99.74
+2025-04-13,Health Insurance,Healthcare,150.45
+2025-02-17,Chipotle,F&B,150.47
+2025-04-19,Walmart,Grocery,281.14
+2025-04-25,Amazon,Shopping,115.95
+2025-04-27,Shell Gas,Transport,163.96
+2025-04-27,Lyft,Transport,24.42
+2025-04-08,Notion,Subscription,245.37
+2025-04-16,Zoom,Subscription,204.44
+2025-04-07,Pharmacy,Healthcare,60.44
+2025-03-22,Dropbox,Subscription,298.34
+2025-01-06,Amazon,Shopping,189.38
+2025-04-08,McDonald's,F&B,143.2
+2025-02-18,Dropbox,Subscription,87.84
+2025-01-05,Doctor Visit,Healthcare,227.42
+2025-01-07,Spotify,Entertainment,234.71
+2025-04-27,Amazon,Shopping,197.14
+2025-02-19,Pharmacy,Healthcare,115.89
+2025-01-02,McDonald's,F&B,117.83
+2025-02-12,Lyft,Transport,240.85
+2025-01-09,Health Insurance,Healthcare,235.39
+2025-02-18,Cinema,Entertainment,172.69
+2025-01-13,Water Bill,Utilities,209.96
+2025-02-12,Health Insurance,Healthcare,45.72
+2025-02-24,BP Petrol,Transport,137.55
+2025-01-16,Electricity Bill,Utilities,267.32
+2025-01-17,eBay,Shopping,163.61
+2025-01-10,McDonald's,F&B,75.63
+2025-01-08,YouTube Premium,Entertainment,7.99
+2025-04-27,Cinema,Entertainment,82.35
+2025-01-07,Netflix,Entertainment,125.16
+2025-01-01,Lyft,Transport,223.97
+2025-02-01,Safeway,Grocery,98.44
+2025-02-22,Trader Joe's,Grocery,12.05
+2025-01-11,Gas Bill,Utilities,268.0
+2025-04-28,YouTube Premium,Entertainment,156.91
+2025-04-28,Water Bill,Utilities,125.4
+2025-03-26,Notion,Subscription,54.79
+2025-01-02,Electricity Bill,Utilities,296.35
+2025-01-02,Netflix,Entertainment,74.2
+2025-04-17,Lyft,Transport,269.11
+2025-02-12,YouTube Premium,Entertainment,274.54
+2025-03-22,Subway,F&B,277.53
+2025-01-18,eBay,Shopping,63.76
+2025-02-24,Zoom,Subscription,28.7
+2025-03-07,Uber,Transport,284.51
+2025-01-07,Trader Joe's,Grocery,176.21
+2025-04-13,eBay,Shopping,214.33
+2025-03-18,Gas Bill,Utilities,152.02
+2025-01-26,Safeway,Grocery,53.79
+2025-01-02,Electricity Bill,Utilities,19.98
+2025-04-13,Target,Shopping,9.09
+2025-03-24,Notion,Subscription,103.12
+2025-03-27,Chipotle,F&B,205.47
+2025-01-27,BP Petrol,Transport,167.59
+2025-02-18,Electricity Bill,Utilities,203.61
+2025-03-05,Pharmacy,Healthcare,137.0
+2025-01-05,Gas Bill,Utilities,147.3
+2025-01-23,Shell Gas,Transport,269.04
+2025-02-13,McDonald's,F&B,213.96
+2025-04-29,Subway,F&B,152.71
+2025-03-30,Internet,Utilities,150.28
+2025-03-19,Doctor Visit,Healthcare,74.86
+2025-03-31,Walmart,Grocery,35.57
+2025-03-22,Chipotle,F&B,53.09
+2025-04-07,Electricity Bill,Utilities,42.1
+2025-03-13,Dropbox,Subscription,32.84
+2025-04-02,Pharmacy,Healthcare,270.5
+2025-01-05,Canva,Subscription,63.7
+2025-01-17,Notion,Subscription,245.47
+2025-01-16,Spotify,Entertainment,80.52
+2025-04-21,eBay,Shopping,24.12
+2025-03-18,Doctor Visit,Healthcare,276.3
+2025-03-22,Chipotle,F&B,215.21
+2025-02-02,Spotify,Entertainment,228.35
+2025-04-20,Spotify,Entertainment,260.62
+2025-02-12,Water Bill,Utilities,147.3
+2025-02-17,Safeway,Grocery,126.23
+2025-01-23,Water Bill,Utilities,127.11
+2025-01-29,Health Insurance,Healthcare,276.85
+2025-01-28,Dropbox,Subscription,33.51
+2025-04-16,Zoom,Subscription,270.67
+2025-04-20,eBay,Shopping,272.84
+2025-04-25,Uber,Transport,261.35
+2025-02-22,BP Petrol,Transport,22.21
+2025-03-24,Doctor Visit,Healthcare,224.51
+2025-03-29,McDonald's,F&B,163.84
+2025-01-23,Walmart,Grocery,99.09
+2025-02-23,Doctor Visit,Healthcare,241.22
+2025-03-11,eBay,Shopping,201.17
+2025-03-06,Pharmacy,Healthcare,292.94
+2025-02-08,Cinema,Entertainment,54.17
+2025-02-06,Health Insurance,Healthcare,209.92
+2025-04-19,BestBuy,Shopping,132.27
+2025-04-15,Water Bill,Utilities,44.21
